@@ -218,6 +218,24 @@
   -webkit-backdrop-filter: blur(8px) saturate(130%);
 }
 
+@media (max-width: 768px) {
+  .promo-card {
+    width: 100%;
+    position: static;
+    transform: none;
+    margin-top: 15px;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-card {
+    padding: 12px 12px;
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+}
+
 .promo-flowers {
   position: absolute;
   top: -32px;
@@ -250,11 +268,29 @@
 .promo-content { text-align: center; padding-top: 8px }
 
 .event-name { font-family: 'Poppins', sans-serif; color: #c71585; margin: 6px 0; font-weight: 800; font-size:1rem }
+
+@media (max-width: 480px) {
+  .event-name {
+    font-size: 0.9rem;
+  }
+}
 .event-slogan { font-family: 'Poppins', sans-serif; color: #ff1493; margin: 0 0 8px; font-weight: 600; letter-spacing: 1px }
 .promo-discount { color: #9b1f5a; font-weight: 700; margin-bottom: 10px }
 
-.promo-names { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:8px }
+.promo-names { display:flex; justify-content:center; align-items:center; gap:12px; margin-bottom:8px; flex-wrap: wrap }
+
+@media (max-width: 480px) {
+  .promo-names {
+    gap: 8px;
+  }
+}
 .promo-name-left, .promo-name-right { font-family: 'Great Vibes', cursive; font-size: 1.4rem; color: #ff1493 }
+
+@media (max-width: 480px) {
+  .promo-name-left, .promo-name-right {
+    font-size: 1.1rem;
+  }
+}
 .promo-plus { color: #ffb6d9; font-weight:700 }
 
 .promo-code { background: rgba(255,20,147,0.06); display:inline-block; padding:6px 10px; border-radius:8px; font-weight:800; color:#c71585 }
@@ -273,6 +309,15 @@
   text-decoration: none;
   box-shadow: 0 8px 20px rgba(199,21,133,0.25);
   transition: all 160ms ease;
+}
+
+@media (max-width: 480px) {
+  .buy-tickets-btn {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    display: block;
+    text-align: center;
+  }
 }
 
 .buy-tickets-btn:hover {
@@ -313,6 +358,18 @@
   border: 1px solid rgba(199,21,133,0.08);
 }
 
+@media (max-width: 480px) {
+  .festival-message {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .festival-message p {
+    line-height: 1.4;
+  }
+}
+
 .festival-message p { margin: 0 }
 
 .promo-score-display {
@@ -323,6 +380,13 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 8px 0;
+}
+
+@media (max-width: 480px) {
+  .promo-score-display {
+    font-size: 1.8rem;
+    margin: 6px 0;
+  }
 }
 
 /* Right-up CTA inside promo */
@@ -439,6 +503,24 @@
   position: relative;
   z-index: 10;
   animation: slide-in 0.6s ease-out;
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .love-calculator {
+    padding: 30px 20px;
+    margin: 15px 10px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .love-calculator {
+    padding: 20px 15px;
+    margin: 10px 8px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(199, 21, 133, 0.2), 0 0 20px rgba(255, 20, 147, 0.1);
+  }
 }
 
 @keyframes slide-in {
@@ -477,12 +559,16 @@
   animation: pulse 2s ease-in-out infinite;
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
   }
-  50% {
-    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
   }
 }
 
@@ -490,6 +576,18 @@
   color: #c71585;
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 0.8rem;
+  }
 }
 
 .input-section {
@@ -522,6 +620,14 @@
   background: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
   outline: none;
+}
+
+@media (max-width: 480px) {
+  .input-field {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
 }
 
 .input-field:focus {
@@ -565,6 +671,23 @@
   letter-spacing: 1px;
   margin-top: 15px;
   box-shadow: 0 10px 30px rgba(255, 20, 147, 0.3);
+}
+
+@media (max-width: 768px) {
+  .calculate-btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculate-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    width: 100%;
+  }
 }
 
 .calculate-btn:hover:not(:disabled) {
@@ -620,6 +743,20 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .hearts-animation {
+    gap: 12px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hearts-animation {
+    gap: 10px;
+    font-size: 1.8rem;
+  }
+}
+
 .hearts-animation span {
   animation: heart-beat 0.6s ease-in-out infinite;
 }
@@ -668,6 +805,22 @@
   animation: scale-pop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+@media (max-width: 768px) {
+  .score-circle {
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgba(255, 20, 147, 0.3);
+  }
+}
+
+@media (max-width: 480px) {
+  .score-circle {
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.3), inset 0 -3px 10px rgba(0, 0, 0, 0.08);
+  }
+}
+
 @keyframes scale-pop {
   0% {
     transform: scale(0);
@@ -684,6 +837,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+@media (max-width: 768px) {
+  .score-number {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .score-number {
+    font-size: 2.6rem;
+  }
 }
 
 .score-percent {
@@ -707,6 +872,20 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .result-names {
+    font-size: 1.1rem;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-names {
+    font-size: 0.95rem;
+    gap: 6px;
+  }
+}
+
 .name {
   color: #ff1493;
   font-weight: 700;
@@ -728,6 +907,21 @@
   background: linear-gradient(135deg, rgba(255, 182, 217, 0.3) 0%, rgba(255, 217, 232, 0.3) 100%);
   border-radius: 12px;
   border-left: 4px solid #ff1493;
+}
+
+@media (max-width: 768px) {
+  .score-message {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .score-message {
+    font-size: 0.9rem;
+    padding: 10px;
+    border-left-width: 3px;
+  }
 }
 
 .progress-bar-container {
@@ -774,6 +968,15 @@
   margin-top: 10px;
 }
 
+@media (max-width: 480px) {
+  .reset-btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
 .reset-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 35px rgba(255, 20, 147, 0.5);
@@ -792,6 +995,14 @@
   justify-content: center;
 }
 
+@media (max-width: 480px) {
+  .share-buttons {
+    gap: 8px;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .share-btn {
   padding: 10px 14px;
   border-radius: 10px;
@@ -799,6 +1010,14 @@
   cursor: pointer;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(199,21,133,0.12);
+}
+
+@media (max-width: 480px) {
+  .share-btn {
+    padding: 12px 16px;
+    flex: 1;
+    font-size: 0.9rem;
+  }
 }
 
 .share-whatsapp {
@@ -841,14 +1060,18 @@
   font-style: italic;
   opacity: 0.8;
 }
-.screens{
-  font-size: medium;
+
+@media (max-width: 480px) {
+  .footer-text {
+    font-size: 0.75rem;
+    margin-top: 15px;
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
   .love-calculator {
-    padding: 30px;
+    padding: 10px;
     margin: 20px;
   }
 
@@ -886,14 +1109,17 @@
 }
 
 @media (max-width: 900px) {
-  /* On smaller screens place the promo card below the results instead of floating */
-  .promo-card {
-    position: absolute;
-    transform: none;
-    top: 2px;
-    left: -21px;
-    width: 99%;
-    margin: 8px auto 0;
+  .promo-cta { position: static; max-width: 100%; text-align: center; margin-bottom: 8px }
+}
+
+@media (max-width: 480px) {
+  .screenshot-note {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
   }
-  .result-section { padding-bottom: 8px }
+  
+  .result-section {
+    gap: 18px;
+  }
 }
