@@ -172,9 +172,9 @@ export default function LoveCalculator() {
 
 
       {loveScore !== null && (
-        <div className="slanted-banner-card">
+        <a href="https://wa.me/2348085982336" target="_blank" rel="noopener noreferrer" className="slanted-banner-card">
           <img src={elemeBanner} alt="ELEME BOLE FEST" className="slanted-banner-img" />
-        </div>
+        </a>
       )}
 
       <div className="love-calculator">
